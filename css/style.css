@@ -50,3 +50,21 @@ select {
 
     --ff-primary: 'Poppins', sans-serif;
 }
+
+/*Basic Styles*/
+
+body {
+    background: var(--very-light-gray);
+    font-family: var(--ff-primary);
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+.sr-only {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    color: var(--very-dark-blue);
+}
