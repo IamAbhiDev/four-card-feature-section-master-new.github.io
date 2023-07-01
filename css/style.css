@@ -58,6 +58,7 @@ body {
     font-family: var(--ff-primary);
     min-height: 100vh;
     display: grid;
+    gap: 1rem;
     place-content: center;
 }
 
@@ -67,4 +68,30 @@ body {
     height: 0;
     overflow: hidden;
     color: var(--very-dark-blue);
+}
+
+/*Header*/
+
+.header {
+    text-align: center;
+    display: grid;
+    gap: 1rem;
+    padding: 0 1.5rem;
+}
+
+.header__heading {
+    color: var(--very-dark-blue);
+    font-weight: var(--light);
+    font-size: clamp(1.45rem, 6.6vw, 2.3rem);
+}
+
+.header__heading__sub-heading {
+    font-weight: bold;
+    display: block;
+}
+
+.header__text {
+    color: var(--grayish-blue);
+    font-size: 0.95rem;
+    line-height: 1.65;
 }
