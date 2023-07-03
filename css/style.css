@@ -82,6 +82,7 @@ body {
 .header {
     text-align: center;
     display: grid;
+    justify-content: center;
     gap: .9rem;
 }
 
@@ -154,4 +155,17 @@ body {
     justify-self: end;
     height: 3.5rem;
     width: 3.5rem;
+}
+
+/*Responsive Web Design*/
+
+@media screen and (min-width: 40rem) {
+    .header__text {
+        width: 34rem;
+    }
+
+    .section {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
 }
