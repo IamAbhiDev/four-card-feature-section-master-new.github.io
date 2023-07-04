@@ -89,7 +89,7 @@ body {
 .header__heading {
     color: var(--very-dark-blue);
     font-weight: var(--light);
-    font-size: clamp(1.45rem, 6.5vw, 2.3rem);
+    font-size: clamp(1.45rem, 6.5vw, 2.28rem);
 }
 
 .header__heading__sub-heading {
@@ -167,5 +167,74 @@ body {
     .section {
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
+    }
+}
+
+/*Responsive Web Design - Desktop*/
+
+@media screen and (min-width: 65rem) {
+    .header {
+        gap: 1.1rem;
+    }
+
+    .container {
+        gap: 4rem;
+    }
+
+    .header__heading {
+        line-height: 1.4;
+        word-spacing: -0.01em;
+        letter-spacing: .001em;
+    }
+
+    .section {
+        gap: 1.9rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 2fr;
+        grid-template-areas:
+            'sup team calculator'
+            'sup karma calculator'
+        ;
+    }
+
+    .section__card {
+        max-width: 26.7rem;
+        gap: 2.35rem;
+        padding: 1.7rem 2rem 2rem;
+    }
+
+    .section__card:nth-child(1) {
+        grid-area: sup;
+        align-self: center;
+    }
+
+    .section__card:nth-child(2) {
+        grid-area: team;
+    }
+
+    .section__card:nth-child(3) {
+        grid-area: karma;
+    }
+
+    .section__card:nth-child(4) {
+        grid-area: calculator;
+        align-self: center;
+    }
+
+    .section__card__content {
+        gap: .5rem;
+    }
+
+    .section__card__content__title {
+        word-spacing: -0.05em;
+    }
+
+    .section__card__content__description {
+        word-spacing: .01em;
+    }
+
+    .section__card__logo {
+        height: 4rem;
+        width: 4rem;
     }
 }
